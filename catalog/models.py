@@ -103,6 +103,7 @@ class Author(models.Model):
     def get_alive_dates(self): #not working yet, migrate says nothing...
         return f'{self.date_of_birth} - {self.date_of_death}'
 
+'''
 # Add Admin user programmatically
 from django.contrib.auth.models import User
 
@@ -116,6 +117,7 @@ else:
     user.first_name = 'John'
     user.last_name = 'Citizen'
     user.save()
+'''
 
 # test model
 class MyModelName(models.Model):

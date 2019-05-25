@@ -14,6 +14,7 @@ class BooksInline(admin.TabularInline):
     extra = 0
 
 # Define the admin class
+@admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
     #pass
     list_display = ('last_name', 'first_name', 'date_of_birth', 'date_of_death')

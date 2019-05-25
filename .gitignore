@@ -72,7 +72,7 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# pyenv
+# pyenvbash
 .python-version
 
 # celery beat schedule file
