@@ -23,7 +23,7 @@ class AuthorAdmin(admin.ModelAdmin):
     inlines = [BooksInline]
 
 # Register the admin class with the associated model
-admin.site.register(Author, AuthorAdmin)
+#admin.site.register(Author, AuthorAdmin)
 
 class BooksInstanceInline(admin.TabularInline):
     model = BookInstance
@@ -35,6 +35,8 @@ class BookAdmin(admin.ModelAdmin):
     #pass
     list_display = ('title', 'author', 'display_genre')
     inlines = [BooksInstanceInline]
+
+admin.site.register(Book, BookAdmin)
 
 # Register the Admin classes for BookInstance using the decorator
 @admin.register(BookInstance)
